@@ -1,3 +1,75 @@
+.home {
+    background: url(../images/bg-home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 160px;
+    padding-bottom: 90px;
+}
+
+.incorporacoes {
+    .cases {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+.slide-incorporacoes {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+26,21b4e2+63,b7deed+100 */
+    background: rgb(35, 40, 45);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 10%, rgba(35, 40, 45, 1) 10%, rgba(35, 40, 45, 1) 85%, rgb(255, 255, 255) 85%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 10%, rgba(35, 40, 45, 1) 10%, rgba(35, 40, 45, 1) 85%, rgb(255, 255, 255) 85%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 10%, rgba(35, 40, 45, 1) 10%, rgba(35, 40, 45, 1) 85%, rgb(255, 255, 255) 85%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0);
+    /* IE6-9 */
+}
+
+.newsletter {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1d1e40;
+    margin-top: 40px;
+}
+
+.contato {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -5px;
+    background: url(../images/bg-contato.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.rodape {
+    background-color: #ececec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.endereco {
+    background-color: #1d1e40;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto-legal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #daa63a;
+}
+
+.icon-up {
+    position: absolute;
+    right: 0;
+    top: -38px;
+}
+
+
+
+
 /* Extra Small */
 @media(max-width:767px) {}
 

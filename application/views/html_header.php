@@ -33,12 +33,15 @@
     );
     echo meta($meta);
     echo link_tag('assets/css/bootstrap.min.css');
-    echo link_tag('assets/css/style.css?v0.0.1');
+    echo link_tag('assets/css/style.css?v0.0.5');
     // echo link_tag('assets/css/lightbox.min.css');
     echo link_tag('assets/css/slick.css');
     echo link_tag('assets/css/slick-theme.css');
     // echo link_tag('assets/css/animate.min.css');
     ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>

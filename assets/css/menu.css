@@ -1,35 +1,66 @@
 .menu {
   width: 100%;
   position: fixed;
-  background-color: #fff;
-  border-color: transparent;
+  background-color: #1d1e40;
   min-height: auto;
   margin-bottom: 0px;
   border: 0px solid transparent;
   z-index: 200;
   border-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.menu .itens {
+  display: table-caption;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.menu .itens img {
+  float: right;
 }
 
 .menu .navbar-brand {
   height: auto;
-  padding: 8px 0 0 0;
-}
-
-.menu .navbar-right {
-  background-color: #a4ced4;
-  padding: 15px 30px;
+  padding: 20px 0 0 0;
 }
 
 .menu .navbar-right li > a {
-  color: #000;
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  border-right: solid 1px #cf641c;
+  padding: 10px 10px;
 }
 
-.menu .navbar-right li:last-child a {
-  border-right: solid 0px transparent;
+.menu .navbar-right li > a::after {
+  width: 5px;
+  height: 5px;
+  content: "";
+  background-color: #daa63a;
+  position: absolute;
+  right: -3px;
+  border-radius: 100px;
+  top: 14px;
+}
+
+.menu .navbar-right li:last-of-type a {
+  padding-right: 0px;
+}
+
+.menu .navbar-right li:last-of-type a::after {
+  display: none;
+}
+
+.menu .navbar-right li > a:focus,
+.menu .navbar-right li > a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .navbar-toggle {
@@ -38,7 +69,7 @@
 }
 
 .menu .navbar-toggle {
-  border-color: #a4ced4;
+  border-color: #fff;
 }
 
 .menu .navbar-toggle:focus,
@@ -47,73 +78,4 @@
 }
 
 /* Extra Small */
-@media (max-width: 767px) {
-  .menu .navbar-brand {
-    height: auto;
-    padding: 7px 0 7px 0;
-  }
-  .menu .navbar-brand img {
-    width: 80%;
-  }
-  .menu .navbar-right {
-    padding: 0px 15px;
-  }
-  .menu .navbar-nav {
-    margin: 0 -15px 7.5px;
-  }
-  .menu .navbar-collapse,
-  .menu .navbar-form {
-    border-color: transparent;
-  }
-  .menu .navbar-right li > a {
-    border-right: solid 0px transparent;
-    border-bottom: solid 1px #cf641c;
-  }
-  .menu .navbar-right li:last-child a {
-    border-bottom: solid 0px transparent;
-  }
-}
-
-/* Small */
-@media (min-width: 768px) and (max-width: 991px) {
-  .menu .navbar-header {
-    width: 150px;
-  }
-  .menu .container .navbar-brand {
-    margin-left: 0px;
-  }
-  .menu .navbar-brand {
-    height: auto;
-    padding: 14px 0 0 0;
-  }
-  .menu .navbar-brand img {
-    width: 100%;
-  }
-  .menu .navbar-right {
-    padding: 10px 0px;
-  }
-  .menu .navbar-right li > a {
-    font-size: 11px;
-    padding: 15px 9px;
-  }
-}
-
-/* Medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .menu .navbar-brand {
-    height: auto;
-    padding: 7px 0 0 0;
-  }
-  .menu .navbar-brand img {
-    width: 80%;
-  }
-  .menu .navbar-right {
-    padding: 10px 10px;
-  }
-  .menu .navbar-right li > a {
-    font-size: 12px;
-  }
-}
-
-/* Large */
 /*# sourceMappingURL=menu.css.map */

@@ -1,3 +1,69 @@
+.home {
+  background: url(../images/bg-home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 160px;
+  padding-bottom: 90px;
+}
+
+.incorporacoes .cases {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.slide-incorporacoes {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+26,21b4e2+63,b7deed+100 */
+  background: #23282d;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(10%, #23282d), color-stop(85%, #23282d), color-stop(85%, white));
+  background: linear-gradient(to bottom, white 10%, #23282d 10%, #23282d 85%, white 85%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0);
+  /* IE6-9 */
+}
+
+.newsletter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1d1e40;
+  margin-top: 40px;
+}
+
+.contato {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -5px;
+  background: url(../images/bg-contato.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.rodape {
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.endereco {
+  background-color: #1d1e40;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texto-legal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #daa63a;
+}
+
+.icon-up {
+  position: absolute;
+  right: 0;
+  top: -38px;
+}
+
 /* Extra Small */
 /* Small */
 /* Medium */

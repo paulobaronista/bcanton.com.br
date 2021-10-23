@@ -8,112 +8,139 @@
                 <span class="icon-bar" style="background-color: #cf641c;"></span>
             </button>
             <a class="navbar-brand scrollink" href="#home">
-                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/logo-bras.png" alt="Tons do Brás">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/logo-bcanton.png" alt="B.Canton">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
+
             <ul id="#menuCenter" class="nav navbar-nav navbar-right">
+                <div class="itens">
+                    <img class="img-responsive" src="<?= base_url(); ?>assets/images/redes.png" alt="B.Canton">
+                </div>
                 <li><a class="scrollink active" href="#home">Home</a></li>
-                <li><a class="scrollink" href="#empreendimento">Empreendimento</a></li>
-                <li><a class="scrollink" href="#video">Vídeo</a></li>
-                <li><a class="scrollink" href="#plantas">Plantas</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#modalFicha">Ficha Técnica</a></li>
-                <li><a class="scrollink" href="#localizacao">Localização</a></li>
+                <li><a class="scrollink" href="#quemsomos">Quem Somos</a></li>
+                <li><a class="scrollink" href="#oquefazemos">O que Fazemos</a></li>
+                <li><a class="scrollink" href="#incorporacoes">Incorporações</a></li>
+                <li><a class="scrollink" href="#produtos">Produtos</a></li>
+                <li><a class="scrollink" href="#cases">Cases</a></li>
                 <li><a class="scrollink" href="#contato">Contato</a></li>
+                <div class="itens">
+                    <img class="img-responsive" src="<?= base_url(); ?>assets/images/busca.png" alt="B.Canton">
+                </div>
             </ul>
         </div>
     </div>
 </nav>
-
-<div id="home" class="faixa-lancamento">
-    <div class="box">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 padding-off">
-                    <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6 text-center wow animate__animated animate__bounceInLeft">
-                        <p>Lançamento - Brás</p>
+<div id="home" class="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <section class="glr-home slider">
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/galeria_01.png" alt="B.Canton">
                     </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center wow animate__animated animate__bounceInRight">
-                        <a class="btn" href="https://vemplan.sigavi360.com.br/Chat/NovoAtendimento/1133?midia=land_tons" target="_blank">
-                            corretores<br />
-                            online
-                        </a>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/galeria_01.png" alt="B.Canton">
                     </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 text-center wow animate__animated animate__bounceInRight">
-                        <a class="btn" href="#" data-toggle="modal" data-target="#modalTourVirtual">
-                            Assista <br />Tour virtual
-                        </a>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/galeria_01.png" alt="B.Canton">
                     </div>
-                </div>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/galeria_01.png" alt="B.Canton">
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/galeria_01.png" alt="B.Canton">
+                    </div>
+                </section>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container-fluid padding-off box-banner wow animate__animated animate__bounceInUp">
-    <div class="box">
-        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/banner.jpg" alt="Tons do Brás">
+<div id="quemsomos" class="container-fluid padding-off">
+    <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/desenvolvimento.jpg" alt="B.Canton">
+</div>
+<div id="oquefazemos" class="container-fluid padding-off">
+    <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/expertise.jpg" alt="B.Canton">
+</div>
+<div id="incorporacoes" class="incorporacoes">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1 cases">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/cases.png" alt="B.Canton">
+            </div>
+        </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="contato" class="container contato">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 padding-off margin-top-30">
-            <form method="post" role="form" action="<?php echo base_url("contato") ?>">
-                <div class="group-form">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <input id="nome" type="text" class="nome form-control" name="nome" required="required" placeholder="Nome*" />
-                        </div>
-                        <div class="form-group">
-                            <input id="email" type="email" class="email form-control" name="email" required="required" placeholder="Email*" />
-                        </div>
-                        <div class="form-group">
-                            <input id="telefone" class="phone form-control" type="tel" name="phone" placeholder="Telefone" />
-                        </div>
-                        <div class="form-group">
-                            <textarea id="form-mensagem" class="msg form-control" rows="3" name="mss" placeholder="Mensagem"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn_enviar btn" title="enviar" name="enviar_email" value="enviar">Enviar</button>
-                        </div>
+<div class="slide-incorporacoes">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
+                <section class="glr-incorp slider">
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/incorporacoes_01.png" alt="B.Canton">
                     </div>
-                </div>
-            </form>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/incorporacoes_01.png" alt="B.Canton">
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/incorporacoes_01.png" alt="B.Canton">
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/incorporacoes_01.png" alt="B.Canton">
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </div>
-
-<?php
-if (isset($email_enviado))
-    echo $email_enviado;
-?>
-
-<!-- <div id="cookies" class="cookies">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-2 box">
-        <div class="col-xs-12 col-sm-9 col-md-9">
-            <p>
-                Este site utiliza cookies para melhorar sua experiência de navegação, permitir um início de sessão seguro, recolher estatísticas e oferecer conteúdo adequado aos seus interesses. Ao continuar sua navegação, considera-se aceito nossos e a nossa <a href="<?php echo base_url(); ?>politicadeprivacidade">Política de Privacidade</a>.
-            </p>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3">
-            <a href="#" class="btn_cookie btn center-block">Aceito</a>
+<div id="newsletter" class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/newsletter.png" alt="B.Canton">
+            </div>
         </div>
     </div>
-</div> -->
+</div>
+<div id="mapa" class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.584671264368!2d-46.539589885020426!3d-23.655040584636456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42ed0297fda3%3A0xeb99f605afe3bdb!2sAlameda%20Francisco%20Alves%2C%20169%20-%2014%C2%BA%20Andar%20-%20Jardim%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009090-790!5e0!3m2!1spt-BR!2sbr!4v1635015401488!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div id="contato" class="contato">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/form.png" alt="B.Canton">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="rodape" class="rodape">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/rodape.png" alt="B.Canton">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="endereco" class="endereco">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/endereco.png" alt="B.Canton">
+                <a href="#home" class="scrollink icon-up">
+                    <img src="<?= base_url(); ?>assets/images/icon-up.png" alt="B.Canton">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="texto-legal" class="texto-legal">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <img class="img-responsive center-block" src="<?= base_url(); ?>assets/images/texto-legal.png" alt="B.Canton">
+            </div>
+        </div>
+    </div>
+</div>

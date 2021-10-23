@@ -159,58 +159,7 @@ p {
   position: fixed;
   right: 0;
   z-index: 999;
-  bottom: 40%;
-}
-
-.float-box a {
-  width: 47px;
-  overflow: hidden;
-  color: rgba(255, 255, 255, 0);
-  -webkit-transition: width 400ms, color 800ms;
-  transition: width 400ms, color 800ms;
-  height: 47px;
-  line-height: 27px;
-  display: block;
-  margin-bottom: 1px;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  font-family: 'Gill Sans Std';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.float-box a:hover {
-  width: 220px;
-  color: white;
-}
-
-.float-box .chat {
-  background: url(../images/icone-chat.png) no-repeat right 10px center;
-  background-color: rgba(0, 0, 0, 0);
-  background-color: #cd1418;
-}
-
-.float-box .phone {
-  background: url(../images/icone-tel.png) no-repeat right 10px center;
-  background-color: rgba(0, 0, 0, 0);
-  background-color: #cd1418;
-  font-size: 18px;
-}
-
-.float-box .mail {
-  background: url(../images/icone-mail.png) no-repeat right 10px center;
-  background-color: rgba(0, 0, 0, 0);
-  background-color: #cd1418;
-}
-
-.float-box .whats {
-  background: url(../images/icone-zap.png) no-repeat right 10px center;
-  background-color: rgba(0, 0, 0, 0);
-  background-color: #cd1418;
+  bottom: 10%;
 }
 
 .aviso {
@@ -326,35 +275,66 @@ p {
 .menu {
   width: 100%;
   position: fixed;
-  background-color: #fff;
-  border-color: transparent;
+  background-color: #1d1e40;
   min-height: auto;
   margin-bottom: 0px;
   border: 0px solid transparent;
   z-index: 200;
   border-radius: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.menu .itens {
+  display: table-caption;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.menu .itens img {
+  float: right;
 }
 
 .menu .navbar-brand {
   height: auto;
-  padding: 8px 0 0 0;
-}
-
-.menu .navbar-right {
-  background-color: #a4ced4;
-  padding: 15px 30px;
+  padding: 20px 0 0 0;
 }
 
 .menu .navbar-right li > a {
-  color: #000;
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
   text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  border-right: solid 1px #cf641c;
+  padding: 10px 10px;
 }
 
-.menu .navbar-right li:last-child a {
-  border-right: solid 0px transparent;
+.menu .navbar-right li > a::after {
+  width: 5px;
+  height: 5px;
+  content: "";
+  background-color: #daa63a;
+  position: absolute;
+  right: -3px;
+  border-radius: 100px;
+  top: 14px;
+}
+
+.menu .navbar-right li:last-of-type a {
+  padding-right: 0px;
+}
+
+.menu .navbar-right li:last-of-type a::after {
+  display: none;
+}
+
+.menu .navbar-right li > a:focus,
+.menu .navbar-right li > a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .navbar-toggle {
@@ -363,7 +343,7 @@ p {
 }
 
 .menu .navbar-toggle {
-  border-color: #a4ced4;
+  border-color: #fff;
 }
 
 .menu .navbar-toggle:focus,
@@ -372,201 +352,73 @@ p {
 }
 
 /* Extra Small */
-@media (max-width: 767px) {
-  .menu .navbar-brand {
-    height: auto;
-    padding: 7px 0 7px 0;
-  }
-  .menu .navbar-brand img {
-    width: 80%;
-  }
-  .menu .navbar-right {
-    padding: 0px 15px;
-  }
-  .menu .navbar-nav {
-    margin: 0 -15px 7.5px;
-  }
-  .menu .navbar-collapse,
-  .menu .navbar-form {
-    border-color: transparent;
-  }
-  .menu .navbar-right li > a {
-    border-right: solid 0px transparent;
-    border-bottom: solid 1px #cf641c;
-  }
-  .menu .navbar-right li:last-child a {
-    border-bottom: solid 0px transparent;
-  }
+.home {
+  background: url(../images/bg-home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 160px;
+  padding-bottom: 90px;
 }
 
-/* Small */
-@media (min-width: 768px) and (max-width: 991px) {
-  .menu .navbar-header {
-    width: 150px;
-  }
-  .menu .container .navbar-brand {
-    margin-left: 0px;
-  }
-  .menu .navbar-brand {
-    height: auto;
-    padding: 14px 0 0 0;
-  }
-  .menu .navbar-brand img {
-    width: 100%;
-  }
-  .menu .navbar-right {
-    padding: 10px 0px;
-  }
-  .menu .navbar-right li > a {
-    font-size: 11px;
-    padding: 15px 9px;
-  }
-}
-
-/* Medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .menu .navbar-brand {
-    height: auto;
-    padding: 7px 0 0 0;
-  }
-  .menu .navbar-brand img {
-    width: 80%;
-  }
-  .menu .navbar-right {
-    padding: 10px 10px;
-  }
-  .menu .navbar-right li > a {
-    font-size: 12px;
-  }
-}
-
-/* Large */
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-.contato .form-control {
-  display: block;
-  width: 100%;
-  height: 60px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 14px;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.contato .form-control::-webkit-input-placeholder {
-  color: #000;
-}
-
-.contato .form-control:-ms-input-placeholder {
-  color: #000;
-}
-
-.contato .form-control::-ms-input-placeholder {
-  color: #000;
-}
-
-.contato .form-control::placeholder {
-  color: #000;
-}
-
-.contato .form-group {
-  margin-bottom: 25px;
-}
-
-.contato textarea {
-  height: 229px !important;
-}
-
-.contato .btn_enviar {
-  font-weight: bold;
-  font-style: normal;
-  padding: 6px 12px;
-  font-size: 17px;
-  line-height: 17px;
-  width: 100%;
-  height: 40px;
-  border: 0px solid transparent;
-  border-radius: 0px;
-  background-color: #000;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-/* Extra Small */
-/* Small */
-/* Medium */
-/* Large */
-.politica {
-  padding-bottom: 30px;
-  padding-top: 100px;
-}
-
-.politica .politica-tt {
+.incorporacoes .cases {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
 }
 
-.politica .politica-tt h3 {
-  font-weight: bold;
-  font-style: normal;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 35px;
-  line-height: 35px;
-  margin: 0;
-  padding: 0;
+.slide-incorporacoes {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+26,21b4e2+63,b7deed+100 */
+  background: #23282d;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(10%, #23282d), color-stop(85%, #23282d), color-stop(85%, white));
+  background: linear-gradient(to bottom, white 10%, #23282d 10%, #23282d 85%, white 85%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0);
+  /* IE6-9 */
 }
 
-.politica .politica-info {
-  margin-top: 30px;
+.newsletter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1d1e40;
+  margin-top: 40px;
 }
 
-.politica .politica-info p {
-  font-weight: 300;
-  font-style: normal;
-  color: #000;
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 10px;
+.contato {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: -5px;
+  background: url(../images/bg-contato.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.politica .politica-info p a {
-  color: #EC2c27;
-  text-decoration: underline;
+.rodape {
+  background-color: #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.endereco {
+  background-color: #1d1e40;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texto-legal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #daa63a;
+}
+
+.icon-up {
+  position: absolute;
+  right: 0;
+  top: -38px;
 }
 
 /* Extra Small */
-@media (max-width: 767px) {
-  .politica {
-    padding-top: 60px;
-  }
-}
-
 /* Small */
 /* Medium */
 /* Large */

@@ -1,9 +1,19 @@
 $(document).on('ready', function () {
-	$(".galeria-home").slick({
+	$(".glr-home").slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
+	});
+	$(".glr-incorp").slick({
 		dots: false,
 		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 5000,
 	});
 });
 
